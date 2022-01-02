@@ -9,7 +9,13 @@ const BlogPost = ({data}) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
-      <p><small>Time to read {readTimeDisplay}</small></p>
+      <p>Time to read {readTimeDisplay}</p>
+      <p>WordCount</p>
+      <ul>
+        <li>Paragraph {data.mdx.wordCount.paragraphs}</li>
+        <li>Sentences {data.mdx.wordCount.sentences}</li>
+        <li>Words {data.mdx.wordCount.words}</li>
+      </ul>
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
@@ -26,6 +32,11 @@ export const query = graphql`
       }
       body
       timeToRead
+      wordCount{
+        paragraphs
+        sentences
+        words
+      }
     }
   }
 `
