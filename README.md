@@ -4,8 +4,10 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Soon to be recipe index built with Gatsby
 </h1>
+
+<p>Setting a foundation for an index of our favorite recipes.</p>
 
 ## 🚀 Quick start
 
@@ -30,8 +32,6 @@
 3.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
 
 4.  **Learn more**
 
